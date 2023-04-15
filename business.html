@@ -1,236 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Car Dealership</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-			background-color: #f8f8f8;
-		}
-		
-		header {
-			background-color: #303030;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
-		
-		h1 {
-			margin: 0;
-			font-size: 36px;
-			line-height: 1.2;
-		}
-		
-		h2 {
-			font-size: 24px;
-			line-height: 1.2;
-			margin-bottom: 10px;
-		}
-		
-		p {
-			margin: 0;
-			line-height: 1.4;
-		}
-		
-		.container {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 20px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		
-		.car {
-			width: calc(25% - 20px);
-			margin-bottom: 40px;
-			background-color: #fff;
-			border-radius: 5px;
-			overflow: hidden;
-			box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
-		}
-		
-		.car img {
-			width: 100%;
-			height: 200px;
-			object-fit: cover;
-			object-position: center;
-			transition: transform 0.3s ease-in-out;
-		}
-		
-		.car:hover img {
-			transform: scale(1.05);
-		}
-		
-		.car-details {
-			padding: 20px;
-		}
-		
-		@media only screen and (max-width: 768px) {
-			.car {
-				width: calc(50% - 20px);
-			}
-		}
-		
-		@media only screen and (max-width: 480px) {
-			.car {
-				width: 100%;
-			}
-		}
-	</style>
+    <title>My Car Dealership</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        
+        header {
+            background-color: #303030;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .car {
+            width: calc(25% - 20px);
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .car img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .car img + img {
+            display: none;
+        }
+        
+        .car:hover img {
+            transform: scale(1.05);
+        }
+        
+        .car-details {
+            padding: 20px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .car {
+                width: calc(50% - 20px);
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .car {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>My Car Dealership</h1>
-	</header>
-	
-	<div class="container">
-		<div class="car">
-			<a href="#car1">
-				<img src="hilux-offers-more-choice-and-features-to-meet-market-demand_hero_940x450.jpg" alt="Car 1">
-			</a>
-			<div class="car-details" id="toyota">
-				<h2>toyota hilux</h2>
-				<p>Year: 2017</p>
-				<p>Price: 17,000,000cfa</p>
-				<p>Color: white</p>
-				<p>Condition: used</p>
-				<p>Engine: 2.7 v6</p>
-				<p>Transmission: 5-Speed Automatic</p>
-			</div>
-		</div>
-
-		<div class="car">
-			<a href="#car2">
-				<img src="Ford-Ranger-DualCabUtility-2015-1.jpg" alt="Car 2">
-			</a>
-			<div class="car-details" id="car2">
-				<h2>ford ranger</h2>
-					<p>Year: 2017</p>
-				<p>Price: 16,000,000cfa</p>
-				<p>Color: white</p>
-				<p>Condition: used</p>
-				<p>Engine: 2.7 v6</p>
-				<p>Transmission: 5-Speed Automatic</p>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Car Dealership</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-			background-color: #f8f8f8;
-		}
-		
-		header {
-			background-color: #303030;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
-		
-		h1 {
-			margin: 0;
-			font-size: 36px;
-			line-height: 1.2;
-		}
-		
-		h2 {
-			font-size: 24px;
-			line-height: 1.2;
-			margin-bottom: 10px;
-		}
-		
-		p {
-			margin: 0;
-			line-height: 1.4;
-		}
-		
-		.container {
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 20px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		
-		.car {
-			width: calc(25% - 20px);
-			margin-bottom: 40px;
-			background-color: #fff;
-			border-radius: 5px;
-			overflow: hidden;
-			box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
-		}
-		
-		.car img {
-			width: 100%;
-			height: auto;
-			object-fit: cover;
-			object-position: center;
-			transition: transform 0.3s ease-in-out;
-			cursor: pointer;
-		}
-		
-		.car img.maximized {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			max-width: 80%;
-			max-height: 80%;
-			margin: auto;
-			z-index: 999;
-		}
-		
-		.car:hover img {
-			transform: scale(1.05);
-		}
-		
-		.car-details {
-			padding: 20px;
-		}
-		
-		@media only screen and (max-width: 768px) {
-			.car {
-				width: calc(50% - 20px);
-			}
-		}
-		
-		@media only screen and (max-width: 480px) {
-			.car {
-				width: 100%;
-			}
-		}
-	</style>
-	<script>
-		function maximizeImage(img) {
-			var src = img.src;
-			var parent = img.parentNode;
-			var imgs = parent.getElementsByTagName("img");
-			var images = [];
-			for (var i = 0; i < imgs.length; i++) {
-				images.push(imgs[i].src);
-			}
-			var index = images.indexOf(src);
-			if (index == 0) {
-				var div = document.createElement("div");
-				div.className = "car-modal";
-				div.onclick = function() {
-					this.parentNode.removeChild(this);
-				}
-				var imgMax = document.createElement("img");
-				imgMax.src = src;
-				imgMax.className = "maximized";
-				div.appendChild(imgMax);
-				for (var i = 1; i < images.length; i++) {
-					var imgModal = document.createElement("img");
-					imgModal.src = images[i
+    <header>
+        <h1>My Car Dealership</h1>
+    </header>
+    
+    <div class="container">
+        <div class="car">
+            <img src="images/toyota-hilux.jpg" alt="Toyota Hilux" onclick="showNextImage(this)">
+            <img src="images/Toyota-Hilux-2017-interior.jpg" alt="Toyota Hilux">
+            <img src="images/quality-toyota-hilux-engine-parts_06.png" alt="Toyota Hilux">
+            <img src="images/toyota-hilux-4.jpg" alt="Toyota Hilux">
+            <div class="car-details">
+                <h2>Toyota Hilux</h2>
+                <p>Year: 2017</p>
+                <p>Price: 17,000,000cfa</p>
+                <p>Color: White</p>
+                <p>Condition: Used</p>
+                <p>Engine: 2.7 V6</p>
+                <p>
